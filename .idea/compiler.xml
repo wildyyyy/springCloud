@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="springCloud" />
+        <module name="sc_sureka_consumer" />
+        <module name="sc_sureka_server" />
+        <module name="sc_eureka_zuul" />
+        <module name="sc_sureka_provider" />
+        <module name="sc_sureka_consumer2" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="sc_eureka_zuul" options="-parameters" />
+      <module name="sc_sureka_consumer" options="-parameters" />
+      <module name="sc_sureka_consumer2" options="-parameters" />
+      <module name="sc_sureka_provider" options="-parameters" />
+      <module name="sc_sureka_server" options="-parameters" />
+    </option>
+  </component>
+</project>

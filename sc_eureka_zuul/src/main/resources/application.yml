@@ -1,0 +1,17 @@
+server:
+  port: 10008
+
+spring:
+  application:
+    name: eureka-zuul
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/euteka
+
+zuul:
+  routes:
+    api-a:
+      paht: /api-a/**
+      serviceId:
